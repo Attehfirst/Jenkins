@@ -6,3 +6,20 @@ Jenkins is widely employed as a crucial CI/CD tool for automating software devel
 
 ## Getting started with Jenkins.
 **Lets dive into installing Jenkins**
+
+
+```
+# Update package repositories
+sudo apt update
+
+# Install JDK (headless)
+sudo apt install -y default-jdk-headless
+
+# Install Jenkins
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt update
+sudo apt-get install jenkins
+
+```
+
